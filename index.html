@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>SANJAY SUBRAMANIAN | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- NETWORK BACKGROUND -->
+  <canvas id="network-canvas"></canvas>
+  
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="logo">SANJAY<span> SUBRAMANIAN</span></div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#extracurricular">Extracurricular</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    
+    <!-- HERO -->
+    <section id="hero" class="section hero fade-section">
+      <div class="hero-content">
+        <h2 class="tag">Aspiring Full Stack Developer</h2>
+
+        <h1>
+          SANJAY S
+        </h1>
+        <p class="hero-sub">
+          Passionate about building scalable web applications, intuitive interfaces,
+          and solving real‑world problems with code.
+        </p>
+        <div class="hero-actions">
+  <a href="#projects" class="btn btn-primary" onclick="toggleActive(this)">View Projects</a>
+
+  <a href="SANJAY RESUME.pdf" 
+     target="_blank" 
+     class="btn btn-primary" onclick="toggleActive(this)">
+    View Resume
+  </a>
+
+  <a href="#contact" class="btn btn-accent" onclick="toggleActive(this)">Contact Me</a>
+</div>
+
+        <div class="hero-meta">
+          <span>Current time (UTC): <span id="currentTime"></span></span>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/sanjaysubramanian04" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/sanjay-s-662556258/" target="_blank">LinkedIn</a>
+          <a href="https://leetcode.com/u/SANJAY_SUBRAMANIAN/" target="_blank">LeetCode</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        
+       <div class="hero-image-wrapper">
+            <div class="blob-border"></div>
+            <div class="profile-img-container">
+                <img src="https://github.com/sanjaysubramanian04/Portfolio-/blob/main/IMG_3055%20(1).jpg?raw=true" alt="Sanjay S Profile" title="Sanjay S">
+            </div>
+            <div class="float-badge badge-1"><i class="fas fa-code"></i> Developer</div>
+            <div class="float-badge badge-2"><i class="fas fa-rocket"></i> Fullstack</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-section">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>A short story about who you are and what you do.</p>
+      </div>
+      <div class="grid about-grid">
+        <div class="card glass">
+          <h3>Profile Summary</h3>
+          <p>
+           Motivated Computer Science Engineering student with hands-on experience in application development, database management, and AI-driven systems. Skilled in translating ideas into real-world solutions through clean code, logical thinking, and continuous learning.
+          </p>
+          <ul class="chip-list">
+            <li>Full Stack Development</li>
+            <li>Problem Solving</li>
+            <li>Competitive Programming</li>
+            <li>Learning New Tech</li>
+          </ul>
+        </div>
+        <div class="card glass">
+          <h3>Highlights</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">2024 - Present</div>
+                <div class="timeline-org">Intern, Web Development</div>
+                <p>Working on real‑world projects and production code.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">2022 - Present</div>
+                <div class="timeline-org">B.E in Computer Science</div>
+                <p>Focused on DSA, databases, and web technologies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EDUCATION -->
+<section id="education" class="section fade-section">
+  <div class="section-head">
+    <h2>Education</h2>
+    <p>My academic background</p>
+  </div>
+
+  <div class="grid education-grid">
+    <!-- College -->
+    <div class="card glass">
+      <h3>B.E – Computer Science Engineering</h3>
+      <p class="edu-org">Sri Sai Ram Engineering College</p>
+      <p class="edu-meta">CGPA: 8.42 | 2022 – 2026</p>
+      <p class="edu-meta">Chennai, Tamil Nadu</p>
+    </div>
+
+    <!-- School -->
+    <div class="card glass">
+      <h3>Higher Secondary (HSC)</h3>
+      <p class="edu-org">Sri Bharathidasan Matriculation Higher Secondary School</p>
+      <p class="edu-meta">Percentage: 91.33% | 2022</p>
+
+      <hr class="edu-divider">
+
+      <h3>Secondary School (SSLC)</h3>
+      <p class="edu-org">Sri Bharathidasan Matriculation Higher Secondary School</p>
+      <p class="edu-meta">Percentage: 84% | 2020</p>
+    </div>
+  </div>
+</section>
+<!-- INTERNSHIP -->
+<section id="internship" class="section fade-section">
+  <div class="section-head">
+    <h2>Internship</h2>
+    <p>Hands-on experience in web and full stack development.</p>
+  </div>
+
+  <div class="grid about-grid">
+    
+    <!-- Experience 1 -->
+    <div class="card glass">
+      <h3>Full Stack Web Development Intern</h3>
+      <p class="edu-org">Kaashiv Infotech, Chennai</p>
+
+      <ul class="chip-list">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Node.js, Express.js, MongoDB</li>
+        <li>Responsive UI Design</li>
+        <li>Form Validation & Backend Integration</li>
+      </ul>
+
+      <p style="margin-top:1rem;">
+        Built responsive web pages, implemented form validation, connected backend APIs, 
+        and gained practical full stack development experience.
+      </p>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="card glass">
+      <h3>Web Development Intern</h3>
+      <p class="edu-org">Kaashiv Infotech, Chennai</p>
+
+      <ul class="chip-list">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive UI & Forms</li>
+        <li>Frontend development</li>
+        <li>Practical project exposure</li>
+      </ul>
+
+      <p style="margin-top:1rem;">
+        Worked on real-time projects, learned best coding practices, and developed 
+        practical frontend and backend skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Tech stack and tools used to build end-to-end solutions.</p>
+      </div>
+    
+      <div class="skills-layout">
+        <div class="card glass">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip">
+              <i class="devicon-python-plain colored"></i> Python
+            </span>
+            <span class="chip">
+              <i class="devicon-javascript-plain colored"></i> JavaScript
+            </span>
+            <span class="chip">
+              <i class="devicon-mysql-plain colored"></i> SQL
+            </span>
+          </div>
+        </div>
+    
+        <div class="card glass">
+          <h3>Frontend</h3>
+          <div class="chip-row">
+            <span class="chip">
+              <i class="devicon-html5-plain colored"></i> HTML
+            </span>
+            <span class="chip">
+              <i class="devicon-css3-plain colored"></i> CSS
+            </span>
+            <span class="chip">
+              <i class="devicon-react-original colored"></i> React (learning)
+            </span>
+          </div>
+        </div>
+    
+        <div class="card glass">
+          <h3>Backend & DB</h3>
+          <div class="chip-row">
+            <span class="chip">
+              <i class="devicon-nodejs-plain colored"></i> Node.js
+            </span>
+            <span class="chip">
+              <i class="devicon-express-original"></i> Express.js
+            </span>
+            <span class="chip">
+              <i class="devicon-mongodb-plain colored"></i> MongoDB
+            </span>
+            <span class="chip">
+              <i class="devicon-mysql-plain colored"></i> MySQL
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Some of the work done in web development and problem solving.</p>
+      </div>
+      <div class="grid project-grid">
+     <article class="card glass project-card">
+  <span class="badge">Web App</span>
+  <h3>Age Calculator</h3>
+  <p>
+    An interactive and user-friendly web application that accurately calculates a user's
+    age based on their date of birth. The app is designed with a clean interface and works
+    seamlessly across all screen sizes, ensuring a smooth experience on desktop, tablet,
+    and mobile devices.
+  </p>
+  <ul>
+    <li>Developed using pure HTML, CSS, and JavaScript without external libraries.</li>
+    <li>Fully responsive layout that adapts to different screen sizes.</li>
+    <li>Instant age calculation with real-time input validation.</li>
+  </ul>
+  <div class="project-links">
+    <a href="https://sanjaysubramanian04.github.io/Age-Calculator/" target="_blank" class="btn">
+      Live Demo
+    </a>
+    <a href="https://github.com/sanjaysubramanian04/Age-Calculator" target="_blank" class="btn btn-secondary">
+      Source Code
+    </a>
+  </div>
+</article>
+
+<article class="card glass project-card">
+  <span class="badge">Full Stack Web App</span>
+
+  <h3>Full-Stack Authentication System</h3>
+
+  <p>
+    A complete authentication system that allows users to register, log in, and access a home page using a secure backend and database.
+  </p>
+
+  <ul>
+    <li>Built with HTML, CSS, JavaScript, Node.js, and Express.</li>
+    <li>MongoDB Atlas used for storing user data.</li>
+    <li>Includes Register, Login, and Home pages.</li>
+    <li>Responsive UI with modern animations.</li>
+  </ul>
+
+  <div class="project-links">
+    <a href="https://full-stack-authentication-system-u5jk.onrender.com" 
+       target="_blank" 
+       class="btn">
+       Live Demo
+    </a>
+
+    <a href="https://github.com/sanjaysubramanian04/Full-Stack-Authentication-System" 
+       target="_blank" 
+       class="btn btn-secondary">
+       Source Code
+    </a>
+  </div>
+</article>
+
+        <article class="card glass project-card">
+  <span class="badge">Web App</span>
+  <h3>Mental Wellness Companion Bot</h3>
+  <p>
+    An AI-powered chatbot designed to provide mental wellness guidance, coping techniques,
+    and emotional support through interactive conversation.
+  </p>
+  <ul>
+    <li>Built with Python, FastAPI, HTML, CSS, and JavaScript.</li>
+    <li>Offers personalized responses for stress, anxiety, sleep, motivation, and more.</li>
+    <li>Mobile-responsive chat UI with smooth animations for enhanced user experience.</li>
+  </ul>
+  <div class="project-links">
+    <a href="https://wellness-bot-jy08.onrender.com" target="_blank" class="btn">Live Demo</a>
+    <a href="https://github.com/sanjaysubramanian04/wellness-bot" target="_blank" class="btn btn-secondary">Source Code</a>
+  </div>
+</article>
+</div>
+</section>
+
+    <!-- AREAS OF INTEREST -->
+<section id="interests" class="section fade-section">
+  <div class="section-head">
+    <h2>Extracurricular Activities</h2>
+    <p>Creative experience and professional skills gained beyond academics.</p>
+  </div>
+
+  <div class="grid about-grid">
+    
+    <!-- Short Film Skills -->
+    <div class="card glass">
+      <h3>🎬 Short Film Making</h3>
+      <ul class="chip-list">
+        <li>Director</li>
+        <li>Script Writing</li>
+        <li>Video Editing (DaVinci Resolve)</li>
+        <li>Creative Storytelling</li>
+      </ul>
+
+      <p style="margin-top:1rem; opacity:0.85;">
+        Actively involved in planning, directing, and editing short films with a
+        strong focus on storytelling and visual impact.
+      </p>
+
+      <a 
+        href="https://www.youtube.com/@THANJAI_FILMMAKERS" 
+        target="_blank"class="btn"
+        style="margin-top:1.2rem; display:inline-block;"
+      >
+        Visit YouTube Channel
+      </a>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="card glass">
+      <h3>💡 Professional & Leadership Skills</h3>
+      <ul class="chip-list">
+        <li>Leadership</li>
+        <li>Time Management</li>
+        <li>Team Coordination</li>
+        <li>Problem Solving</li>
+        <li>Communication Skills</li>
+      </ul>
+
+      <p style="margin-top:1rem; opacity:0.85;">
+        Developed strong interpersonal and leadership skills by managing people,
+        handling pressure situations, and working collaboratively in teams.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- NSS ACTIVITIES -->
+<section id="nss" class="section fade-section">
+  <div class="section-head">
+    <h2>National Service Scheme (NSS)</h2>
+    <p>Social responsibility, leadership, and community engagement activities.</p>
+  </div>
+
+  <!-- NSS INTRO CARD -->
+  <div class="grid" style="grid-template-columns:1fr;">
+    <div class="card glass">
+      <h3>🌱 NSS Volunteer Activities</h3>
+
+      <ul class="chip-list">
+        <li>Community Service</li>
+        <li>Leadership & Teamwork</li>
+        <li>Event Coordination</li>
+        <li>Social Awareness</li>
+        <li>Volunteer Management</li>
+      </ul>
+
+      <p style="margin-top:1rem; opacity:0.85;">
+        Actively participated in National Service Scheme initiatives focused on
+        community development, leadership building, and social awareness programs.
+      </p>
+    </div>
+  </div>
+   <div class="grid nss-gallery">
+
+  <div class="card glass">
+    <img src="images/nss1.jpg" alt="Independence Day Debate">
+    <p>Independence Day debate event conducted as part of social awareness activities.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss2.jpg" alt="NSS Camp School Events">
+    <p>Organized and conducted multiple school events for students during the NSS camp.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss3.jpg" alt="School Event">
+    <p>Conducted educational and cultural activities for school students on a regular day.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss4.jpg" alt="Village Interview Program">
+    <p>Assisted in organizing company interviews for educated villagers in rural areas.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss5.jpg" alt="Student Engagement">
+    <p>Actively involved in coordinating school-level student engagement programs.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss6.jpg" alt="QCFI Chennai">
+    <p>Volunteered at the Quality Circle Forum of India (QCFI), Chennai Chapter event.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss7.jpg" alt="Temple Visit">
+    <p>Visited a local temple during the NSS camp as part of cultural engagement.</p>
+  </div>
+
+  <div class="card glass">
+    <img src="images/nss8.jpg" alt="NSS GRITX Event">
+    <p>Organized NSS GRITX event with technical and non-technical competitions.</p>
+  </div>
+
+</div>
+  
+</section>
+    <!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">GET IN TOUCH</h2>
+  <div class="contact-line"></div>
+
+  <div class="contact-box">
+
+    <div class="card glass project-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <a href="mailto:sanjaysubu004@gmail.com" class="btn ghost">
+        Send Message
+      </a>
+    </div>
+
+    <div class="card glass project-card">
+      <div class="icon">🔗</div>
+      <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/sanjay-s-662556258/" target="_blank" class="btn ghost">
+        Let’s Connect
+      </a>
+    </div>
+
+    <div class="card glass project-card">
+      <div class="icon">💻</div>
+      <h3>GitHub</h3>
+      <a href="https://github.com/sanjaysubramanian04" target="_blank" class="btn ghost">
+        View Profile
+      </a>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Sanjay Subramanian. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
