@@ -989,3 +989,71 @@ main {
     height: 200px;
   }
 }
+
+/* Demo Label */
+.demo-label {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #00bcd4;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Highlighted Video Wrapper ===== */
+
+.video-wrapper {
+  position: relative;
+  margin-top: 0.8rem;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgba(34, 211, 238, 0.6);
+  box-shadow:
+    0 0 25px rgba(34, 211, 238, 0.35),
+    0 0 60px rgba(168, 85, 247, 0.15);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Glowing animated border effect */
+.video-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 211, 238, 0.8),
+    rgba(168, 85, 247, 0.8),
+    rgba(249, 115, 22, 0.8)
+  );
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Video */
+.video-wrapper video {
+  width: 100%;
+  display: block;
+  border-radius: inherit;
+}
+
+/* Hover effect */
+.video-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 40px rgba(34, 211, 238, 0.6),
+    0 0 80px rgba(168, 85, 247, 0.25);
+}
+
+.video-wrapper:hover::before {
+  opacity: 1;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .video-wrapper video {
+    max-height: 220px;
+    object-fit: cover;
+  }
+}
