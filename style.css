@@ -815,14 +815,15 @@ main {
 }
 
 .project-links .btn-secondary {
-    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
-    color: white;
+    background: linear-gradient(135deg, #facc15, #eab308); /* yellow gradient */
+    color: #000; /* better contrast on yellow */
 }
 
 .project-links .btn-secondary:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(238, 90, 82, 0.4);
+    box-shadow: 0 8px 25px rgba(250, 204, 21, 0.4); /* yellow glow */
 }
+
 /* CONTACT SECTION */
 .contact-section {
   padding: 100px 20px;
