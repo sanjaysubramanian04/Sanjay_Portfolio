@@ -14,12 +14,8 @@ I am a Computer Science Engineering student passionate about full stack developm
 ## 🏗️ Tech Stack
 - HTML5  
 - CSS3  
-- JavaScript  
-- Node.js  
-- Express.js  
-- MongoDB  
-- Python (FastAPI)  
-
+- JavaScript
+  
 ---
 
 ## 🌐 Live Demo
