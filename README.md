@@ -19,7 +19,7 @@ I am a Computer Science Engineering student passionate about full stack developm
 ---
 
 ## 🌐 Live Demo
-(Add your portfolio link here)](https://sanjay-subramanian-portfolio.vercel.app/)
+https://sanjay-subramanian-portfolio.vercel.app/
 
 ---
 
